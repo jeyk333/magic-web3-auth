@@ -21,10 +21,12 @@ const Dashboard = () => {
     setIsUserAuthenticatedLoading(true);
     try {
       const isLoggedIn = await magic.user.isLoggedIn();
-      if (!isLoggedIn) {
+      setIsUserAuthenticatedLoading(false);
+      if (isLoggedIn) {
+        return;
+      } else {
         router.push('/');
       }
-      setIsUserAuthenticatedLoading(false);
     } catch (err) {
       setIsUserAuthenticatedLoading(false);
     }
