@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@magic-sdk/admin": "^2.0.0",
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
+    "magic-sdk": "^19.3.0",
+    "mongoose": "^7.4.4",
     "next": "13.4.19",
+    "passport": "^0.6.0",
+    "passport-magic": "^1.0.0",
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
